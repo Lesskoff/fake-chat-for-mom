@@ -1,13 +1,16 @@
 import "./styles.css";
 // import anime from "animejs";
+import data from "./data.json";
 import axios from "axios";
+import messSoundUrl from "../sounds/new_mess.mp3";
+import statusSoundUrl from "../sounds/status_mess.mp3";
 
 let prevName = "";
 let colorList = {};
 let subtitleArray = [];
 
-const messAudio = new Audio("./new_mess.mp3");
-const statusAudio = new Audio("./status_mess.mp3");
+const messAudio = new Audio(messSoundUrl);
+const statusAudio = new Audio(messSoundUrl);
 const playSound = audioObj => {
   if (audioObj) {
     audioObj.pause();
@@ -18,23 +21,6 @@ const playSound = audioObj => {
 
 const subtitle = document.getElementById("subtitle");
 const app = document.getElementById("app");
-
-axios("./data.json").then(res => {
-  const data = res.data;
-
-  // fill subtitle
-  data.forEach(el => {
-    // debugger;
-    if (subtitleArray.indexOf(el.name) < 0 && !!el.name)
-      subtitleArray.push(el.name);
-  });
-  subtitle.innerText = subtitleArray.join(", ") + ", Вы";
-
-  // start messaging
-  createList(data).then(() => {
-    // console.log("done");
-  });
-});
 
 const createMess = item => {
   return new Promise((resolve, reject) => {
@@ -102,3 +88,16 @@ const createList = async data => {
     });
   }
 };
+
+// fill subtitle
+data.forEach(el => {
+  // debugger;
+  if (subtitleArray.indexOf(el.name) < 0 && !!el.name)
+    subtitleArray.push(el.name);
+});
+subtitle.innerText = subtitleArray.join(", ") + ", Вы";
+
+// start messaging
+createList(data).then(() => {
+  // console.log("done");
+})

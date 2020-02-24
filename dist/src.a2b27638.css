@@ -30,7 +30,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url(../img/bg.png);
+  background-image: url(/bg.a404a63d.png);
   opacity: 0.06;
   z-index: -1;
 }
@@ -227,3 +227,6 @@ body {
   text-align: center;
   text-shadow: 0 1px 0 rgba(var(--inverse-rgb), 0.4);
 }
+
+
+/*# sourceMappingURL=/src.a2b27638.css.map */
