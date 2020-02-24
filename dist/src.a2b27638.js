@@ -2814,7 +2814,7 @@ var prevName = "";
 var colorList = {};
 var subtitleArray = [];
 var messAudio = new Audio(_new_mess.default);
-var statusAudio = new Audio(_new_mess.default);
+var statusAudio = new Audio(_status_mess.default);
 
 var playSound = function playSound(audioObj) {
   if (audioObj) {
@@ -2996,7 +2996,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57655" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58577" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

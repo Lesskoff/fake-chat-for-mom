@@ -10,7 +10,7 @@ let colorList = {};
 let subtitleArray = [];
 
 const messAudio = new Audio(messSoundUrl);
-const statusAudio = new Audio(messSoundUrl);
+const statusAudio = new Audio(statusSoundUrl);
 const playSound = audioObj => {
   if (audioObj) {
     audioObj.pause();
