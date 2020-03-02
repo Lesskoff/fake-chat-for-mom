@@ -2,75 +2,68 @@
   {
     "id": "status",
     "type": "status",
-    "mess": "Вы создали группу \"Выпускной 2020 Школа №4\"",
+    "mess": "You created the chat",
     "delay": 1000
   },
   {
     "id": "user_1",
     "type": "mess",
-    "name": "Мама №1",
-    "mess": "Всем привет",
+    "name": "User One",
+    "mess": "Hello there!",
     "delay": 2500
   },
   {
     "id": "user_1",
     "type": "mess",
-    "name": "Мама №1",
-    "mess": "Как дела?",
-    "delay": 500
+    "name": "User One",
+    "mess": "Whats up?",
+    "delay": 1100
   },
   {
     "id": "status",
     "type": "status",
-    "mess": "Мама №1 добавил(-а) Папа №1",
+    "mess": "User Two left the chat",
     "delay": 1000
   },
   {
     "id": "status",
     "type": "status",
-    "mess": "Папа №1 покинул(-а) группу",
+    "mess": "User One added User Two",
     "delay": 1000
   },
   {
     "id": "user_3",
     "type": "mess",
-    "name": "Мама №3",
-    "mess": "О, привет!",
+    "name": "User Three",
+    "mess": "Oh, hi!",
     "delay": 2000
   },
   {
     "id": "user_3",
     "type": "mess",
-    "name": "Мама №3",
-    "mess": "Нормально))",
-    "delay": 2000
-  },
-  {
-    "id": "user_3",
-    "type": "mess",
-    "name": "Мама №3",
-    "mess": "Что делать будем?🤔",
+    "name": "User Three",
+    "mess": "Fine<smile>😊</smile>",
     "delay": 2000
   },
   {
     "id": "user_2",
     "type": "mess",
-    "name": "Мама №2",
-    "mess": "У меня есть крутая идея!😁👌",
-    "delay": 700
+    "name": "User Two",
+    "mess": "I have a good idea!😁👌",
+    "delay": 1700
   },
   {
     "id": "user_1",
     "type": "mess",
-    "name": "Мама №1",
-    "mess": "Давай рассказывай 😊",
+    "name": "User One",
+    "mess": "Come on, tell us😊",
     "delay": 2500
   },
   {
     "id": "user_2",
     "type": "mess",
-    "name": "Мама №2",
-    "mess": "В общем, тема такая...",
+    "name": "User Two",
+    "mess": "The topic is...",
     "delay": 2500
   }
 ]
