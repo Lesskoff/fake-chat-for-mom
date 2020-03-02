@@ -95,7 +95,7 @@ data.forEach(el => {
   if (subtitleArray.indexOf(el.name) < 0 && !!el.name)
     subtitleArray.push(el.name);
 });
-subtitle.innerText = subtitleArray.join(", ") + ", Вы";
+subtitle.innerText = subtitleArray.join(", ") + ", You";
 
 // start messaging
 createList(data).then(() => {
